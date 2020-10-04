@@ -17,7 +17,7 @@
 | orginal ADULT goal field.
 |
 | More information detailing the meaning of the attributes can be
-| found in http://www.bls.census.gov/cps/cpsmain.htm
+| found in http://www.bls.census.gov/cps/cpsmain.html
 | To make use of the data descriptions at this site, the following mappings
 | to the Census Bureau's internal database column names will be needed:
 |
@@ -66,7 +66,7 @@
 | fill inc questionnaire for veteran's admin	VETQVA
 | veterans benefits				VETYN
 | weeks worked in year				WKSWORK
-| 
+|
 | Basic statistics for this data set:
 |
 | Number of instances data = 199523
@@ -78,7 +78,7 @@
 | Probability for the label '50000+' : 6.20%
 | Majority accuracy: 93.80% on value - 50000
 | Number of attributes = 40 (continuous : 7 nominal : 33)
-| Information about .data file : 
+| Information about .data file :
 |   91 distinct values for attribute #0 (age) continuous
 |    9 distinct values for attribute #1 (class of worker) nominal
 |   52 distinct values for attribute #2 (detailed industry recode) nominal
@@ -119,7 +119,7 @@
 |    3 distinct values for attribute #37 (veterans benefits) nominal
 |   53 distinct values for attribute #38 (weeks worked in year) continuous
 |    2 distinct values for attribute #39 (year) nominal
-| 
+|
 |
 | Error rates:
 |    C4.5       	: 4.8%
@@ -128,7 +128,7 @@
 |    C5.0 boosting	: 4.6%
 |    Naive-Bayes	: 23.2%
 |
-| 
+|
 | All commas and periods were changed to spaces
 | Colons were replaced with dashes.
 |

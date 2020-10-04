@@ -10,6 +10,37 @@ import scipy.stats as ss
 from IPython.core.display import HTML
 
 
+# Feature Mappings
+education_mapping = {' Doctorate degree(PhD EdD)': 'PHD',
+     ' Prof school degree (MD DDS DVM LLB JD)': 'Professional',
+     ' Masters degree(MA MS MEng MEd MSW MBA)': 'masters',
+     ' Bachelors degree(BA AB BS)': 'bachelor',
+     ' Associates degree-academic program': 'community_college',
+     ' Associates degree-occup /vocational': 'skilled',
+     ' Some college but no degree': 'community_college',
+     ' High school graduate':' HS_grad' ,
+     ' 12th grade no diploma': 'dropout',
+     ' 11th grade': 'dropout',
+     ' 10th grade': 'dropout',
+     ' 9th grade': 'dropout',
+     ' 7th and 8th grade': 'elementary',
+     ' 5th or 6th grade': 'elementary',
+     ' 1st 2nd 3rd or 4th grade': 'primary',
+     ' Less than 1st grade': 'primary',
+     ' Children': 'Children'}
+
+def weeks_work_map(weeks):
+    """
+    simple mapping of weeks worked to category
+    """
+    if weeks == 0:
+        return 'unemployed'
+    if weeks >= 48:
+        return 'full_time'
+    return 'part_time'
+
+
+# FUNCTION DEFINITIONS
 def css_styling(css_file_path="./custom.css"):
     """
     DESCR: return a loaded css file html object to render in a notebook
